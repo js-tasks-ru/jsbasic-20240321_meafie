@@ -3,10 +3,10 @@ function toggleText() {
   document
     .querySelector(".toggle-text-button")
     .addEventListener("click", () => {
-      if (text.hasAttribute("hidden")) {
-        text.removeAttribute("hidden");
+      if (text.hidden) {
+        text.hidden = false;
       } else {
-        text.setAttribute("hidden", "");
+        text.hidden = true;
       }
     });
 }
